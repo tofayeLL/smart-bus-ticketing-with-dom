@@ -13,46 +13,107 @@
 <body>
     <header class="container mx-auto px-4 lg:px-20">
         <!-- nav section -->
-        <nav >
+        <nav>
             <div class="flex justify-between items-center p-4 bg-green-400 rounded-md">
                 <h3 class="text-xl font-extrabold">T-Ticket</h3>
-                
-                
-                    <button class="flex justify-center gap-2 items-center bg-green-100 text-green-400 font-semibold px-4 py-2 rounded-lg">Bus
-                        <img src="images/bus-icon.png" alt="" >
-                    </button>
-                
+
+
+                <button
+                    class="flex justify-center gap-2 items-center bg-green-100 text-green-400 font-semibold px-4 py-2 rounded-lg">Bus
+                    <img src="images/bus-icon.png" alt="">
+                </button>
+
 
             </div>
         </nav>
-       
+
 
     </header>
     <main class="container mx-auto px-4 lg:px-20 my-10">
         <!-- banner section -->
-        <section class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] bg-center bg-cover h-[80vh] rounded-lg  flex flex-col justify-center items-center">
-            
-          <div class="flex flex-col justify-center items-center lg:w-[54%] mx-auto space-y-7 ">
-            <h3 class="text-center text-2xl lg:text-5xl font-bold text-white">End-to-End Travel with 
-                <br>
-                <span class="text-green-500">T Paribahan</span>
-            </h3>
-            <p class="text-center text-white text-sm lg:text-lg font-medium opcity-70">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="btn bg-green-500 border-none">
-                Buy Tickets
-            </button>
+        <section
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] bg-center bg-cover h-[80vh] rounded-lg  flex flex-col justify-center items-center">
 
-          </div>
+            <div class="flex flex-col justify-center items-center lg:w-[54%] mx-auto space-y-7 ">
+                <h3 class="text-center text-2xl lg:text-5xl font-bold text-white">End-to-End Travel with
+                    <br>
+                    <span class="text-green-500">T Paribahan</span>
+                </h3>
+                <p class="text-center text-white text-sm lg:text-lg font-medium opcity-70">Yes, you can run unit tests
+                    and view the results directly within the app. The integrated testing features allow for a
+                    streamlined .</p>
+                <button class="btn bg-green-500 border-none">
+                    Buy Tickets
+                </button>
+
+            </div>
         </section>
-        
-        
+
+        <!-- best offer section -->
+        <section class="my-20">
+            <div class="text-center lg:space-y-7 space-y-4 ">
+                <h3 class="text-3xl font-bold">Best offers for you</h3>
+                <!-- offer div -->
+                <div class="flex flex-col lg:flex-row lg:gap-10 gap-5 justify-center items-center">
+                    <!-- 15 % offer -->
+                    <div class="bg-[#ffbf0f] flex justify-between items-center gap-10 lg:p-10 p-4 rounded-lg">
+                        <div class="space-y-1 text-start">
+                            <h3 class="text-xl lg:text-4xl font-bold">15% OFF</h3>
+                            <p class="lg:text-sm text-xs  font-medium">on your next purchase</p>
+                            <p class="lg:text-sm text-xs  font-medium opacity-70">use by January 2024</p>
+
+                        </div>
+
+
+
+                        <div class="border-dashed  border-l-4 px-4">
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold">NEW15</h3>
+                                <p class="text-sm font-medium opacity-70">Coupon Code</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 20% offer -->
+                    <div class="bg-[#f78c9c] flex justify-between items-center gap-10 lg:p-10 p-4 rounded-lg">
+                        <div class="space-y-1 text-start">
+                            <h3 class="text-xl lg:text-4xl font-bold">20% OFF</h3>
+                            <p class="lg:text-sm text-xs font-medium">on your next purchase</p>
+                            <p class="lg:text-sm text-xs  font-medium opacity-70">use by January 2024</p>
+
+                        </div>
+
+
+
+                        <div class="border-dashed  border-l-4 px-4">
+                            <div class="ml-6">
+                                <h3 class="text-lg font-bold">Couple 20</h3>
+                                <p class="text-sm  font-medium opacity-70">Coupon Code</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="btn text-sm font-semibold bg-green-300 ">See All Offers</button>
+
+
+            </div>
+
+        </section>
+
 
     </main>
     <footer>
 
     </footer>
-<!-- added ticket.js  -->
-<script src="script/ticket.js"></script>
+    <!-- added ticket.js  -->
+    <script src="script/ticket.js"></script>
 </body>
 
 </html>
