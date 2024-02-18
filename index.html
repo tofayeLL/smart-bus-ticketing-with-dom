@@ -31,7 +31,7 @@
     </header>
     <main class="container mx-auto px-4 lg:px-20 my-10">
         <!-- banner section -->
-        <section
+        <section id="benner"
             class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] bg-center bg-cover h-[80vh] rounded-lg  flex flex-col justify-center items-center">
 
             <div class="flex flex-col justify-center items-center lg:w-[54%] mx-auto space-y-7 ">
@@ -42,9 +42,7 @@
                 <p class="text-center text-white text-sm lg:text-lg font-medium opcity-70">Yes, you can run unit tests
                     and view the results directly within the app. The integrated testing features allow for a
                     streamlined .</p>
-                <button class="btn bg-green-500 border-none">
-                    Buy Tickets
-                </button>
+                <a href="#select-seat"  class="btn bg-green-500 border-none">Buy Tickets</a>
 
             </div>
         </section>
@@ -109,7 +107,7 @@
 
 
         <!-- TA paribahan section -->
-        <section>
+        <section id="select-seat">
             <!-- text section -->
             <div class="lg:w-[64%] mx-auto text-center space-y-5">
                 <h3 class="text-3xl font-bold">T.A Paribahan</h3>
@@ -137,7 +135,7 @@
                         </div>
                         <button class="flex btn justify-center  items-center bg-green-100  ">
                             <img src="images/seat-green.png" alt="">
-                            <p class="text-green-500 text-base font-semibold"><span>40</span> Seats left</p>
+                            <p class="text-green-500 text-base font-semibold"><span id="seat-left" class="text-lg font-bold">40</span> Seats left</p>
                         </button>
                     </div>
 
@@ -178,10 +176,10 @@
 
             <!-- last -->
             <!-- container -->
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
                 <!-- seat section left -->
 
-                <div class="lg:w-[60%] ">
+                <div class="lg:w-[60%] lg:h-[100vh]">
                     <div class="divide-y-2 divide-dashed ">
                         <h3 class="text-lg font-bold py-4">Select Your Seat</h3>
                         <div class="flex justify-between items-center py-4">
@@ -200,9 +198,9 @@
                         </div>
 
                     </div>
+
+
                     <div class="grid grid-cols-2 gap-24 ">
-
-
                         <div class="grid grid-cols-2 gap-5">
                             <kbd class="kbd">A1</kbd>
                             <kbd class="kbd">A2</kbd>
@@ -220,7 +218,6 @@
                             <kbd class="kbd">G2</kbd>
                             <kbd class="kbd">H1</kbd>
                             <kbd class="kbd">H2</kbd>
-
                         </div>
                         <div class="grid grid-cols-2 gap-5">
                             <kbd class="kbd">A3</kbd>
@@ -239,15 +236,18 @@
                             <kbd class="kbd">G4</kbd>
                             <kbd class="kbd">H3</kbd>
                             <kbd class="kbd">H4</kbd>
-
                         </div>
 
                     </div>
+
+
+
+
                 </div>
 
 
                 <!-- seat section right  -->
-                <div class="lg:[w-40%]">
+                <div class="lg:[w-40%] lg:h-[100vh]">
 
                     <div class=" bg-[#f7f8f8] px-4 rounded-lg">
 
@@ -258,13 +258,13 @@
 
                             </div>
 
-                            <div class="grid grid-cols-3 gap-14 py-4">
+                            <div class="grid grid-cols-3 gap-6 py-4">
                                 <div class="relative">
-                                    <p class="lg:text-lg text-sm  font-medium ">Seat</p>
+                                    <p class="lg:text-lg text-sm  font-medium  ">Seat</p>
                                     <p
-                                        class="bg-green-400 absolute top-[-10%] right-0  lg:px-3 px-2 rounded-md font-bold">
+                                        class="bg-green-400 absolute top-0 right-[25%]  lg:px-3 px-2 rounded-md font-bold">
 
-                                        <span>0</span>
+                                        <span id="count-seat">0</span>
 
                                     </p>
 
@@ -273,21 +273,19 @@
                                 <p class="lg:text-lg text-sm  font-medium ">Price</p>
                             </div>
 
-                            <div class="grid grid-cols-3 gap-6  py-4">
-
-                                <div>
-                                    C3
-                                </div>
-                                <p>Echonomy</p>
-
-
-                                <div class="ml-6">
-                                    500
+                            <div  class="grid grid-cols-3 gap-6 py-4 lg:px-2">
+                                <div id="display-seat">
+                                    
 
                                 </div>
+                                <div id="display-title" class="lg:mr-3  mr-0">
+                                    
 
+                                </div>
+                                <div id="display-price" class="lg:ml-3 ml-0">
+                                    
 
-
+                                </div>
 
                             </div>
 
